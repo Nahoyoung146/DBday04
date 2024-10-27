@@ -1,4 +1,10 @@
 select * from mafia;
 delete from mafia;
 commit;
-select * from newst;
+insert into mafia(id) values(111);
+insert into mafia(id,pwd,name,win,lose) values('112','111','111',0,0);
+desc mafia;
+update mafia set pwd= '111', name='111',win=0,lose=0 where id='111';
+select * from mafia where id='333';
+delete from mafia where id=333;
+rollback;
